@@ -299,12 +299,12 @@ Displayability = collections.namedtuple(
     )
 
 BLANK_VALUES = ('', None)
-INSTITUTION_NAME_BLANK_VALUES = BLANK_VALUES + ('Add Your Institution Here',)
-INSTITUTION_URL_BLANK_VALUES = BLANK_VALUES + ('LINK_TO_YOUR_INSTITUTION_HERE',)
+INSTITUTION_NAME_BLANK_VALUES = BLANK_VALUES + ('Girls Code',)
+INSTITUTION_URL_BLANK_VALUES = BLANK_VALUES + ('http://girlscode.com.py',)
 PRIVACY_TERM_URL_BLANK_VALUES = (
     BLANK_VALUES + ('PRIVACY_POLICY_AND_TERMS_OF_SERVICE',))
 SITE_NAME_BLANK_VALUES = BLANK_VALUES
-SITE_LOGO_BLANK_VALUES = BLANK_VALUES + ('assets/img/your_logo_here.png',)
+SITE_LOGO_BLANK_VALUES =  ('assets/img/logo.png',)
 
 
 def get_setting_value(app_context, constant):

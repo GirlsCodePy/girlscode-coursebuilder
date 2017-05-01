@@ -29,23 +29,24 @@ course:
   admin_user_emails: ''
 
   # Course title
-  title: 'Power Searching with Google'
+  title: 'Mis Inicios con el Rodi'
 
   # Main page blurb. (The '|' at the beginning enables multi-line input.)
   blurb: |
-    Google Search makes it amazingly easy to find information. Come learn about
-    the powerful advanced tools we provide to help you find just the right
-    information when the stakes are high.
+    Tutorial básico sobre como realizar los primeros movimientos |
+    con el Rodi en TurtleBlocks.
+
+
 
   # Information about the instructor to display on the main page.
-  instructor_details: 'Daniel Russell <br> Senior Research Scientist <br> Google, Inc.'
+  instructor_details: 'Gabriela Gaona <br> Senior Research Scientist <br> Girls Code, Inc.'
 
   # You can choose whether you want a video or an image on the main page.
   # If you specify a URL for a YouTube video then the video will be displayed
   # in a video player. Otherwide the URL will be shown as an image. The image
   # alt text allows the image to be understood by text-only screen readers.
   main_image:
-    url: https://www.youtube.com/embed/Kdg2drcUjYI?rel=0
+    url: https://www.youtube.com/watch?v=pZ6sVgVfyL4
     alt_text:
 
   # Forum email. For details, see
@@ -54,7 +55,7 @@ course:
 
   # Locale for internationalization. See modules/i18n/resources/locale for
   # available locales.
-  locale: 'en_US'
+  locale: 'es'
 
   # Whether the course is open to the students.
   now_available: true

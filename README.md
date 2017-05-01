@@ -19,6 +19,18 @@ Ref: https://edu.google.com/openonline/course-builder/docs/1.11/set-up-course-bu
 
 https://girlscode-platform.appspot.com/
 
+- Correr Google courseBuilder en modo desarrollo con App Engine
+1. Instalar previamente SDK for App Engine para python 2.7
+Ref: https://cloud.google.com/appengine/docs/standard/python/download
+
+2. Dentro de la carpeta /girlscode-coursebuilder/ correr: 
+> dev_appserver.py app.yaml
+
+- Correr Google courseBuilder en modo desarrollo 
+Ref: https://edu.google.com/openonline/course-builder/docs/1.11/for-course-builder-developers/get-started.html
+Correr en la consola dentro de la carpeta /girlscode-coursebuilder
+> sh ./scripts/start_in_shell.sh -f -s
+
 
 
 

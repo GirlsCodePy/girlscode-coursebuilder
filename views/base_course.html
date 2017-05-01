@@ -35,27 +35,27 @@
         {{ html_hooks.insert('base.after_navbar_begins') }}
         <li {% if navbar.announcements %}class='active'{% endif %}>
           {# I18N: Navbar tab. #}
-          <a href="announcements">{{ gettext('Announcements') }}</a>
+          <a href="announcements">{{ gettext('Anuncios') }}</a>
         </li>
         <li {% if navbar.course %}class='active'{% endif %}>
           {# I18N: Navbar tab. #}
-          <a href="course">{{ gettext('Course') }}</a>
+          <a href="course">{{ gettext('Cursos') }}</a>
         </li>
         {% if course_info.course.forum_email %}
           <li {% if navbar.forum %}class='active'{% endif %}>
             {# I18N: Navbar tab. #}
-            <a href="forum">{{ gettext('Forum') }}</a>
+            <a href="forum">{{ gettext('Foro') }}</a>
           </li>
         {% endif %}
         {% if not transient_student %}
           <li {% if navbar.progress %}class='active'{% endif %}>
             {# I18N: Navbar tab. #}
-            <a href="student/home">{{ gettext('Progress') }}</a>
+            <a href="student/home">{{ gettext('Progreso') }}</a>
           </li>
         {% elif can_register %}
           <li {% if navbar.registration %}class='active'{% endif %}>
             {# I18N: Navbar tab. #}
-            <a href="register">{{ gettext('Registration') }}</a>
+            <a href="register">{{ gettext('Registrarse') }}</a>
           </li>
         {% endif %}
         {% for item in left_links %}
