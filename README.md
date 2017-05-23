@@ -31,6 +31,8 @@ Ref: https://edu.google.com/openonline/course-builder/docs/1.11/for-course-build
 Correr en la consola dentro de la carpeta /girlscode-coursebuilder
 > sh ./scripts/start_in_shell.sh -f -s
 
+Se levanta la aplicacion en `http://localhost:8081`
+
 
 
 
