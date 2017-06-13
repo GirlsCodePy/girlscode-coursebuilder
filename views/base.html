@@ -94,6 +94,7 @@
       <link rel="stylesheet" href="{{url}}" type="text/css">
     {% endfor %}
 
+
     {% for url in extra_global_js_urls %}
       <script src="{{url}}" type="text/javascript"></script>
     {% endfor %}
@@ -161,7 +162,9 @@
     {{ html_hooks.insert('base.before_head_tag_ends') | safe}}
   </head>
 
-  <body data-gcb-page-locale="{{ page_locale }}">
+  <body data-gcb-page-locale="{{ page_locale }}" class="body-wrapper">
+
+  <!-- <div class="main-wrapper"> -->
 
     {{ html_hooks.insert('base.after_body_tag_begins') }}
 
@@ -198,6 +201,52 @@
         <!-- End Google Tag Manager -->
     {% endif %}
     {% endif %}
+
+
+    <!-- HEADER -->
+    <!-- <header id="pageTop" class="header-wrapper"> -->
+      <!-- COLOR BAR -->
+      <div class=" color-bar top-fixed clearfix">
+      <!-- container-fluid -->
+        <div class="row">
+          <div class="col-sm-1 col-xs-2 bg-color-1">fix bar</div>
+          <div class="col-sm-1 col-xs-2 bg-color-2">fix bar</div>
+          <div class="col-sm-1 col-xs-2 bg-color-3">fix bar</div>
+          <div class="col-sm-1 col-xs-2 bg-color-4">fix bar</div>
+          <div class="col-sm-1 col-xs-2 bg-color-5">fix bar</div>
+          <div class="col-sm-1 col-xs-2 bg-color-6">fix bar</div>
+          <div class="col-sm-1 bg-color-1 hidden-xs">fix bar</div>
+          <div class="col-sm-1 bg-color-2 hidden-xs">fix bar</div>
+          <div class="col-sm-1 bg-color-3 hidden-xs">fix bar</div>
+          <div class="col-sm-1 bg-color-4 hidden-xs">fix bar</div>
+          <div class="col-sm-1 bg-color-5 hidden-xs">fix bar</div>
+          <div class="col-sm-1 bg-color-6 hidden-xs">fix bar</div>
+        </div>
+      </div>
+
+      <!-- TOP INFO BAR -->
+      <div class="top-info-bar bg-color-7 hidden-xs" style="margin-right: -15px;
+    margin-left: -15px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-7">
+              <ul class="list-inline topList">
+                <li><i class="fa fa-envelope bg-color-1" aria-hidden="true"></i> <a href="mailto:info@yourdomain.com">contacto@girlscode.com.py</a></li>
+                <li><i class="fa fa-phone bg-color-2" aria-hidden="true"></i> +595 981 962 250 | +595 981 550 695</li>
+              </ul>
+            </div>
+            <div class="col-sm-5">
+              <ul class="list-inline functionList">
+                <li><i class="fa fa-unlock-alt bg-color-5" aria-hidden="true"></i> <a href='#loginModal' data-toggle="modal" >Accede</a><span>o</span><a href='#createAccount' data-toggle="modal">Crea una cuenta</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- </header> -->
 
     <!-- ButterBar -->
     <div class="gcb-butterbar-container">
@@ -256,6 +305,8 @@
       </div>
     </div>
 
+    
+
     {% block navbar %}
     {% endblock %}
 
@@ -274,6 +325,136 @@
     <!-- footer section -->
     <div style="margin-top: 50px;" id="gcb-signature"></div>
     <div class="gcb-footer" id="gcb-footer">
+<!-- footer nadia -->
+
+    <!-- FOOTER INFO AREA -->
+      <div class="footerInfoArea full-width clearfix" style="background-image: url(assets/img/footer-bg-1.png);">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 col-xs-12">
+              <div class="footerTitle">
+                <a href="index-v1.html"><img src="assets/img/logo-footer.png"></a>
+              </div>
+              <div class="footerInfo">
+                <p>Creemos que las niñas y adolescentes de este siglo merecen la oportunidad de introducirse en el mundo de la informática, para generar valor agregado digital a través de la programación. </p>
+                <p>Despertando su interés y desarrollando habilidades, a través del pensamiento lógico y pragmático, desarrollando ventajas competitivas.</p>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="footerTitle">
+                <h4>Enlaces interesantes</h4>
+              </div>
+              <div class="footerInfo">
+                <ul class="list-unstyled footerList">
+                  <li>
+                    <a href="index-v1.html">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>Guía para la instalación de Scratch
+                    </a>
+                  </li>
+                  <li>
+                    <a href="about_us.html">
+                      <i class="fa fa-angle-double-right" aria-hidden="true"></i>Enlace para descargar Scratch
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index-v2.html">
+                      <i class="fa fa-angle-double-right" aria-hidden="true"></i>Utilizar turtle desde la web
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index-v3.html">
+                      <i class="fa fa-angle-double-right" aria-hidden="true"></i>Dibujando con Scratch
+                    </a>
+                  </li>
+<!--
+                  <li>
+                    <a href="photo-gallery.html">
+                      <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                      Photo Gallery
+                    </a>
+                  </li>
+-->
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="footerTitle">
+                <h4>Publicaciones recientes</h4>
+              </div>
+              <div class="footerInfo">
+                <ul class="list-unstyled postLink">
+                  <li>
+                    <div class="media">
+                      <a class="media-left" href="single-blog.html">
+                        <img class="media-object img-rounded border-color-1" src="assets/img/footer-img-1.png" alt="Image">
+                      </a>
+                      <div class="media-body">
+                        <h5 class="media-heading"><a href="single-blog.html">Marzo arranca con nuevo taller! Para niñas y adolescentes. Les esperamos!</a></h5>
+                        <p>Marzo - 2017</p>
+<!--                        <p>July 7 - 2016</p>-->
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media">
+                      <a class="media-left" href="single-blog-left-sidebar.html">
+                        <img class="media-object img-rounded border-color-2" src="assets/img/footer-img-2.png" alt="Image">
+                      </a>
+                      <div class="media-body">
+                        <h5 class="media-heading"><a href="single-blog-left-sidebar.html">¡Celebramos con los chicos de la liga nacional de Robótica! Campeones y participantes del mundial de Robótica ¡Felicidades! 🎉</a></h5>
+<!--                        <p>July 7 - 2016</p>-->
+                        <p>Marzo - 2017</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media">
+                      <a class="media-left" href="single-blog-left-sidebar.html">
+                        <img class="media-object img-rounded border-color-4" src="assets/img/footer-img-3.png" alt="Image">
+                      </a>
+                      <div class="media-body">
+                        <h5 class="media-heading"><a href="single-blog-left-sidebar.html">¿En qué momento pierden las niñas el interés por la ciencia?
+(y más importante, cómo podemos empezar a cambiarlo)</a></h5>
+<!--                        <p>July 7 - 2016</p>-->
+                        <p>Marzo - 2017</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="footerTitle">
+                <h4>Quiero donar/colaborar</h4>
+              </div>
+              <div class="footerInfo">
+                <p>Dejanos tu correo y nos pondremos en contacto contigo</p>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Dirección de correo" aria-describedby="basic-addon21">
+                  <button type="submit" class="input-group-addon" id="basic-addon21"><i class="fa fa-check" aria-hidden="true"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- COPY RIGHT -->
+      <div class="copyRight clearfix">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 col-sm-push-7 col-xs-12">
+              <ul class="list-inline">
+                <li><a href="https://www.facebook.com/girlsCode.py/" class="bg-color-1"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/PYGirlsCode" class="bg-color-2"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
       <div id="gcb-footer-local">
         <div class="gcb-aux">
         </div>
@@ -316,6 +497,11 @@
       </div>
     </div>
     {{ html_hooks.insert('base.before_body_tag_ends') }}
+
+
+    
+    <!-- </footer> -->
+  </div>
 
     {% if context %}
       <div class="gcb-jinja-context">
