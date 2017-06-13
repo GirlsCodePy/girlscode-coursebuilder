@@ -12,7 +12,7 @@ course:
   google_analytics_id: ''
   google_tag_manager_id: ''
   instructor_details: ''
-  locale: es
+  locale: en_US
   main_image: {alt_text: '', url: ''}
   now_available: true
   title: clicklinktest
@@ -32,8 +32,8 @@ html_hooks:
       </form> </li>}
 institution:
   logo: {alt_text: '', url: assets/img/your_logo_here.png}
-  name: 'Girls Code'
-  url: 'http://girlscode.com.py'
+  name: ''
+  url: ''
 preview: {}
 reg_form: {additional_registration_fields: '', can_register: true, whitelist: ''}
 unit: {}
