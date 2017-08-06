@@ -516,17 +516,19 @@ a.gcb-button-action, button.gcb-button-action {
 /* Styles for next and previous navigation buttons at the bottom of lesson pages. */
 .gcb-next-button a, .gcb-prev-button a {
   float: left;
-  height: 24px;
+  height: 42px;
   line-height: 24px;
   position: relative;
   color: #444;
   text-decoration: none;
 }
 .gcb-next-button a {
-  padding: 10px 10px 10px 20px;
+  padding: 10px 20px 10px 20px;
+  width: 160px;
 }
 .gcb-prev-button a {
   padding: 10px 20px 10px 10px;
+  width: 160px;
 }
 
 .gcb-next-button a:after, .gcb-prev-button a:after {
@@ -567,14 +569,14 @@ a.gcb-button-action, button.gcb-button-action {
   -webkit-border-radius: 10px 0px 0px 10px;
   border-radius: 10px 0px 0px 10px;
   float: right;
-  margin: 5px 40px 5px 0;
+  margin: 20px 22px 5px 0;
 }
 .gcb-prev-button {
   -moz-border-radius: 0px 10px 10px 0px;
   -webkit-border-radius: 0px 10px 10px 0px;
   border-radius: 0px 10px 10px 0px;
   float: left;
-  margin: 5px 0 5px 40px;
+  margin: 20px 0 5px 22px;
 }
 
 /* Styles for the course title shown at the top of all student-facing pages. */
