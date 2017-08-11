@@ -97,7 +97,14 @@ th, td, .th, .td {
 
 #gcb-nav-y li a, #gcb-nav-y li.active li a {
   font-weight: normal;
-  color: #15C;
+  /*color: #15C;*/
+  color: #666666;
+}
+
+#gcb-nav-y  a:hover {
+  font-weight: normal;
+  /*color: #15C;*/
+  color: #84bed6;
 }
 
 #gcb-nav-y li {
@@ -635,9 +642,12 @@ a.gcb-button-action, button.gcb-button-action {
 
 /* Style for the course syllabus header. */
 .gcb-syllabus-headers {
-  font-size: 20px;
-  font-weight: normal;
+  font-size: 24px;
+  font-weight: bold;
   margin: 10px 7px;
+  color:#84bed6;
+  font-family: 'Dosis', sans-serif;
+
 }
 
 /*
@@ -646,7 +656,7 @@ a.gcb-button-action, button.gcb-button-action {
 */
 .gcb-top-content {
   margin: 0px 20px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 200;
   line-height: 20px;
 }
