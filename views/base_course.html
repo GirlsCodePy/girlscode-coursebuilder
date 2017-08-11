@@ -40,27 +40,82 @@
 
 {% block navbar %}
   <!-- nav bar -->
-  <div class="gcb-nav gcb-complex" id="gcb-nav-x">
-    <div class="gcb-aux">
-      <ul class="clearfix">
+  <nav id="menuBar" class="navbar navbar-default lightHeader" role="navigation" style="opacity: 1;">
+        <div>
 
-        <!-- left-aligned links in order -->
-        {{ html_hooks.insert('base.after_navbar_begins') }}
-        <li {% if navbar.announcements %}class='active'{% endif %}>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse" style="margin-top: 0px;">
+            <ul class="nav navbar-nav navbar-left">
+
+            {{ html_hooks.insert('base.after_navbar_begins') }}
+
+            <li {% if navbar.announcements %}class='active'{% endif %} class="dropdown megaDropMenu color-1">
+                {# I18N: Navbar tab. #}
+                <a href="announcements">
+                  <i class="fa fa-newspaper-o bg-color-1" aria-hidden="true"></i> 
+                  <span>{{ gettext('Announcements') }}</span>
+                </a>
+            </li>
+
+
+            <!-- <li {% if navbar.announcements %}class='active'{% endif %}>
           {# I18N: Navbar tab. #}
           <a href="announcements">{{ gettext('Announcements') }}</a>
-        </li>
-        <li {% if navbar.course %}class='active'{% endif %}>
-          {# I18N: Navbar tab. #}
-          <a href="course">{{ gettext('Course') }}</a>
-        </li>
-        {% if course_info.course.forum_email %}
+        </li> -->
+
+              
+              <li {% if navbar.course %}class='active'{% endif %} class="dropdown megaDropMenu color-2">
+                {# I18N: Navbar tab. #}
+                <a href="course">
+                  <i class="fa fa-book bg-color-2" aria-hidden="true"></i> 
+                  <span>{{ gettext('Course') }}</span>
+                </a>
+
+                <!-- <li {% if navbar.course %}class='active'{% endif %}>
+                  {# I18N: Navbar tab. #}
+                  <a href="course">{{ gettext('Course') }}</a>
+                </li> -->
+
+
+              </li>
+
+              {% if course_info.course.forum_email %}
+              <li {% if navbar.forum %}class='active'{% endif %} class="dropdown singleDrop color-3">
+                {# I18N: Navbar tab. #}
+                <a href="forum">
+                  <i class="fa fa-users bg-color-3" aria-hidden="true"></i> 
+                  <span>{{ gettext('Forum') }}</span>
+                </a>
+              </li>
+              {% endif %}
+              <!--  {% if course_info.course.forum_email %}
           <li {% if navbar.forum %}class='active'{% endif %}>
             {# I18N: Navbar tab. #}
             <a href="forum">{{ gettext('Forum') }}</a>
           </li>
-        {% endif %}
-        {% if not transient_student %}
+        {% endif %} -->
+
+
+              {% if not transient_student %}
+              <li {% if navbar.progress %}class='active'{% endif %} class="dropdown singleDrop color-4">
+                {# I18N: Navbar tab. #}
+                <a href="student/home">
+                  <i class="fa fa-star-half-full bg-color-4" aria-hidden="true"></i> 
+                  <span>{{ gettext('Progress') }}</span>
+                </a>
+              </li>
+              {% elif can_register %}
+              <li {% if navbar.registration %}class='active'{% endif %} class="dropdown singleDrop color-4">
+                {# I18N: Navbar tab. #}
+                <a href="register">
+                  <i class="fa fa-calendar bg-color-4" aria-hidden="true"></i> 
+                  <span>{{ gettext('Registration') }}</span>
+                </a>
+              </li>
+              {% endif %}
+
+
+               <!-- {% if not transient_student %}
           <li {% if navbar.progress %}class='active'{% endif %}>
             {# I18N: Navbar tab. #}
             <a href="student/home">{{ gettext('Progress') }}</a>
@@ -70,44 +125,55 @@
             {# I18N: Navbar tab. #}
             <a href="register">{{ gettext('Registration') }}</a>
           </li>
-        {% endif %}
-        {% for item in left_links %}
-          <li>
-            {% if item is string %}
-              {{ item }}
-            {% else %}
-              {# For convenience for simple items, leftnavs can be
-                 2-tuples of href and link text.  More complex things
-                 can be injected as template evaluations, SafeDOM, etc. #}
-              {% set href, link = item %}
-              <a href="{{ href }}">{{ link }}</a>
-            {% endif %}
-          </li>
-        {% endfor %}
+        {% endif %} -->
 
-        <!-- right-aligned links are in order -->
+
+            <!-- right-aligned links are in order -->
         {% for href, link in right_links %}
-          <li class="gcb-pull-right">
-            <a href="{{ href }}">{{ link }}</a>
-          </li>
+        <li class="dropdown megaDropMenu color-2 gcb-pull-right">
+                <a href="{{ href }}">
+                  <i class="fa fa-file-text-o bg-color-2" aria-hidden="true"></i> 
+                  <span>{{ link }}</span>
+                </a>
+              </li>
+         
         {% endfor %}
         {% if show_course_explorer_tab %}
           {% if logoutUrl %}
-            <li class="gcb-pull-right">
-              {# I18N: Text for title of navigation bar tab to reach list of
+            
+            <li class="dropdown megaDropMenu color-2 gcb-pull-right">
+                <a href="/">
+                {# I18N: Text for title of navigation bar tab to reach list of
                  courses the current user is enrolled in or whitelisted for. #}
-              <a href="/">{{ gettext('My Courses') }}</a>
-            </li>
+                  <i class="fa fa-file-text-o bg-color-5" aria-hidden="true"></i> 
+                  <span>{{ gettext('My Courses') }}</span>
+                </a>
+              </li>
           {% else %}
-            <li class="gcb-pull-right">
-              {# I18N: Text for title of navigation bar tab to reach list of all
+          <li class="dropdown megaDropMenu color-2 gcb-pull-right">
+                <a href="/explorer">
+                {# I18N: Text for title of navigation bar tab to reach list of all
                  available courses when user is logged out. #}
-              <a href="/explorer">{{ gettext('Explore Courses') }}</a>
-            </li>
+                  <i class="fa fa-file-text-o bg-color-7" aria-hidden="true"></i> 
+                  <span>{{ gettext('Explore Courses') }}</span>
+                </a>
+              </li>
           {% endif %}
         {% endif %}
-        {{ html_hooks.insert('base.before_navbar_ends') }}
+        
+            </ul>
+          </div>
+
+
+        </div>
+      </nav>
+
+      
       </ul>
     </div>
   </div>
+
+
+  </div>
+
 {% endblock %}
