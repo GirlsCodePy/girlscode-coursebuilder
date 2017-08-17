@@ -54,9 +54,9 @@ a {
   text-decoration: none;
 }
 
-a:visited {
+/*a:visited {
   color: #7847b2;
-}
+}*/
 
 a:focus, a:hover, a:active {
   text-decoration: underline;
@@ -254,7 +254,7 @@ th, td, .th, .td {
 }
 
 .gcb-breadcrumb {
-  font-size: 11px;
+  font-size: 14px;
   margin: 0 0 20px;
   min-height: 28px;
   overflow: hidden;
@@ -565,7 +565,7 @@ a.gcb-button-action, button.gcb-button-action {
   box-shadow: 0 1px 1px rgba(0,0,0,.2);
   display: inline-block;
   font-family: "open sans", arial, sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   position: relative;
   -moz-transition: all .218s ease-in;
   -webkit-transition: all .218s ease-in;
@@ -673,6 +673,8 @@ a.gcb-button-action, button.gcb-button-action {
   line-height: 1;
   margin: 0;
   padding-bottom: 10px;
+  color:#f0c24b;
+  font-family: 'Dosis', sans-serif;
 }
 
 .gcb-unit-description {
@@ -738,6 +740,8 @@ table.gcb-student-data-table {
 }
 .gcb-lesson-title-with-progress {
   margin-left: 20px;
+  font-family: "open sans", arial, sans-serif;
+  font-size: 14px;
 }
 .gcb-activity-title-with-progress {
   margin-left: 35px;
