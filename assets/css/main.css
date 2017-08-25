@@ -989,3 +989,15 @@ html.hide-controls .gcb-assessment-contents .gcb-border-box {
   margin: 0;
   padding: 0;
 }
+
+.gcb-announcement-title{
+  font-family: 'Dosis',sans-serif;
+  color: #b5d56a;
+
+}
+
+.date-string, .gcb-announcement-content{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color:#666666;
+}
