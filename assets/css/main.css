@@ -687,6 +687,8 @@ a.gcb-button-action, button.gcb-button-action {
   font-size: 23px;
   margin: 0px;
   text-align: left;
+  color: #b5d56a;
+  font-family: 'Dosis', sans-serif;
 }
 
 .gcb-lesson-content {
@@ -742,6 +744,7 @@ table.gcb-student-data-table {
   margin-left: 20px;
   font-family: "open sans", arial, sans-serif;
   font-size: 14px;
+
 }
 .gcb-activity-title-with-progress {
   margin-left: 35px;
@@ -927,7 +930,9 @@ div#base-before-navbar-ends {
 }
 
 .gcb-last-location {
-  background-color: #DEF;
+  /*background-color: #DEF;*/
+  background-color: #b5d56a;
+  color: #ffffff;
 }
 
 /*
