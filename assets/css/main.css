@@ -121,6 +121,10 @@ th, td, .th, .td {
   margin: 0 0 0 0;
 }
 
+#gcb-nav-y li.active{  
+  background: #b5d56a;
+}
+
 #gcb-nav-y + .gcb-article {
   float: right;
   width: 82.8220858896%;
@@ -772,7 +776,7 @@ table.gcb-student-data-table {
   margin: 9px 0 120px 0;
 }
 #gcb-nav-y.left-menu .gcb-top-content {
-  font-size: 11px;
+  font-size: 14px;
   line-height: normal;
   margin: 0px;
 }
@@ -802,6 +806,7 @@ table.gcb-student-data-table {
 #gcb-nav-y.left-menu li.gcb-unit-title.expanded {
   background-color: #ffffff;
 }
+
 #gcb-nav-y.left-menu li.gcb-assessment-as-lesson {
   margin: 0;
   padding-left: 2px;
@@ -821,7 +826,7 @@ table.gcb-student-data-table {
 
 /* A box that surrounds read-only assessments. */
 .gcb-border-box {
-  border: 1px solid black;
+  border: 1px solid #e0e0e0;
   margin: 20px;
   padding: 10px;
 }
@@ -929,11 +934,11 @@ div#base-before-navbar-ends {
   font-size: xx-small;
 }
 
-.gcb-last-location {
+./*gcb-last-location {
   /*background-color: #DEF;*/
-  background-color: #b5d56a;
+  /*background-color: #b5d56a;
   color: #ffffff;
-}
+}*/
 
 /*
  * Extra CSS for views/unit.html in order to suppress everything (all navigation
@@ -1005,4 +1010,11 @@ html.hide-controls .gcb-assessment-contents .gcb-border-box {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   color:#666666;
+}
+
+.assessment-title{
+  color: #b5d56a;
+  font-size: 23px;
+  font-family: 'Dosis', sans-serif;
+  padding: 5px;
 }

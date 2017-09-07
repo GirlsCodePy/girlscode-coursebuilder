@@ -3,7 +3,7 @@
 {% endif %}
 
 <div class="gcb-assessment-contents">
-  <h1>
+  <h1 class="assessment-title">
     {{ assessment_title }}
     {% if is_read_write_course and is_course_admin %}
       <a href="dashboard?action=edit_assessment&key={{ unit_id }}"
@@ -137,7 +137,7 @@
 
           <br><br>
 
-          <a href="reviewdashboard?unit={{ unit_id }}" class="gcb-button">
+          <a href="reviewdashboard?unit={{ unit_id }}" class="btn-primary">
             {# I18N: Text shown on a button that allows the student to navigate from an assignment submission page to the peer review dashboard for that assignment. #}
             {{ gettext('Go to the review dashboard') }}
           </a>

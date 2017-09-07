@@ -48,7 +48,7 @@ $(function() {
     if (contentElements.subFields.length > 0) {
       $('.content-triggers > a.inputEx-List-link')
       .removeClass('inputEx-List-link')
-      .addClass('gcb-button')
+      .addClass('btn-primary')
       .each(function(index, button) {
         $button = $(button);
         $div = $('<div class="add-content-trigger"></div>');

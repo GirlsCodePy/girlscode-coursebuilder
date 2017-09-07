@@ -59,7 +59,7 @@
         {% for visualization in visualizations %}
           <input type="hidden" name="visualization" value="{{ visualization }}">
         {% endfor %}
-        <button class="gcb-button gcb-icon-button"
+        <button class="btn-primary gcb-icon-button"
                 type="submit">
           <span class="icon md-refresh"></span>
           <span>Update All</span>
@@ -76,7 +76,7 @@
         {% for visualization in visualizations %}
           <input type="hidden" name="visualization" value="{{ visualization }}">
         {% endfor %}
-        <button class="gcb-button gcb-icon-button"
+        <button class="btn-primary gcb-icon-button"
                 type="submit">
           <span class="icon spinner md md-settings md-spin"></span>
           <span>Cancel All</span>
@@ -100,19 +100,19 @@
     {% if rest_source.chunk_size > 0 %}
       <span>{{ rest_source.title }}</span>
       <button
-         class="gcb-button"
+         class="btn-primary"
          id="gcb_rest_source_page_request_zero_{{ rest_source.name }}"
          onclick="gcbRestSourcePageRequest('{{ rest_source.name }}', 0);">
         |&lt;&lt;
       </button>
       <button
-         class="gcb-button"
+         class="btn-primary"
          id="gcb_rest_source_page_request_minusten_{{ rest_source.name }}"
          onclick="gcbRestSourcePageChange('{{ rest_source.name }}', -10);">
         &lt;&lt;
       </button>
       <button
-         class="gcb-button"
+         class="btn-primary"
          id="gcb_rest_source_page_request_minusone_{{ rest_source.name }}"
          onclick="gcbRestSourcePageChange('{{ rest_source.name }}', -1);">
         &lt;
@@ -122,13 +122,13 @@
         0
       </span>
       <button
-         class="gcb-button"
+         class="btn-primary"
          id="gcb_rest_source_page_request_plusone_{{ rest_source.name }}"
          onclick="gcbRestSourcePageChange('{{ rest_source.name }}', 1);">
         &gt;
       </button>
       <button
-         class="gcb-button"
+         class="btn-primary"
          id="gcb_rest_source_page_request_plusten_{{ rest_source.name }}"
          onclick="gcbRestSourcePageChange('{{ rest_source.name }}', 10);">
         &gt;&gt;

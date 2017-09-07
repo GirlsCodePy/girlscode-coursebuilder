@@ -7,7 +7,7 @@ base: {after_body_tag_begins: <!-- base.after_body_tag_begins -->, after_main_co
     <link rel="stylesheet" type="text/css" href="/modules/search/assets/search.css"
     /> <li class="gcb-pull-right"> <form class="gcb-search-form" action="search" method="get">
     <input class="gcb-search-box" name="query" type="text" aria-label="Enter a search
-    term"> <input value="Search" class="gcb-button gcb-search-button" type="submit">
+    term"> <input value="Search" class="btn-primary gcb-search-button" type="submit">
     </form> </li>, nav_header: Search Education, privacy_terms_url: PRIVACY_POLICY_AND_TERMS_OF_SERVICE,
   show_gplus_button: true}
 certificate_criteria:

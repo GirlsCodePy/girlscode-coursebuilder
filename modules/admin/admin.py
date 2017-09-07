@@ -704,7 +704,7 @@ class BaseAdminHandler(ConfigPropertyEditor):
             a = safe_dom.Element(
                 'a', href='%s?%s' % (
                     self.LINK_URL, urllib.urlencode(args)),
-                className='gcb-button'
+                className='btn-primary'
             ).add_text(caption)
             if onclick:
                 a.add_attribute(onclick=onclick)
@@ -988,7 +988,7 @@ Input your Python code below and press "Run Program" to execute.""")
             ).add_child(
                 safe_dom.Element('p', align='center').add_child(
                     safe_dom.Element(
-                        'button', className='gcb-button', type='submit'
+                        'button', className='btn-primary', type='submit'
                     ).add_text('Run Program')
                 )
             )

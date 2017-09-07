@@ -7105,4 +7105,8 @@ footer .color-bar {
   top: 0;
 }
 
+li.gcb-unit-title.expanded {
+  background-color: blue;
+}
+
 /*# sourceMappingURL=style.css.map */

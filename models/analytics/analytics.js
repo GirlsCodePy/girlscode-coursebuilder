@@ -41,7 +41,7 @@ $(function() {
 
       // change cancel button
       var reloader = $(
-        '<a class="gcb-button gcb-icon-button">' +
+        '<a class="btn-primary gcb-icon-button">' +
         ' <span class="icon md-visibility"></span>' +
         ' <span>Display Results</span>' +
         '</a>');

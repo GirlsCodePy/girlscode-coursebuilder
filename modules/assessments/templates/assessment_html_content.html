@@ -34,10 +34,10 @@
   <div class="qt-assessment-button-bar">
   {% if is_review_form %}
     <div class="qt-review-form-controls">
-      <button class="gcb-button qt-save-draft">
+      <button class="btn-primary qt-save-draft">
         {{ gettext(' Save Draft ') }}
       </button>
-      <button class="gcb-button qt-submit-review">
+      <button class="btn-primary qt-submit-review">
         {{ gettext(' Submit Review ') }}
       </button>
     </div>
@@ -45,7 +45,7 @@
     {% if not readonly %}
       {% if check_answers %}
         <div class="qt-grade-scored-lesson" style="display:none">
-          <button class="gcb-button qt-check-answer-button">
+          <button class="btn-primary qt-check-answer-button">
             {{ gettext(' Check Answers ') }}
           </button>
         </div>
@@ -54,7 +54,7 @@
            data-question-batch-id="A{{ unit_id }}"></div>
       {% if not transient_student %}
       <div class="qt-grade-assessment" style="display:none">
-        <button class="gcb-button qt-check-answer-button">
+        <button class="btn-primary qt-check-answer-button">
           {{ gettext(' Submit Answers ') }}
         </button>
       </div>

@@ -38,7 +38,7 @@ window.DriveTagControls = (function(
   var module = {}
 
   module._apiApiLoaded = null;
-  module._buttonClass = 'gcb-button gcb-button-action gcb-button-author';
+  module._buttonClass = 'btn-primary gcb-button-action gcb-button-author';
   module._contentIframeClass = 'google-drive-content-iframe';
   module._driveApiLoaded;
   module._previewIframeClass = 'google-drive-preview-iframe';

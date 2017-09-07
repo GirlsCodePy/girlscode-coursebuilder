@@ -32,8 +32,8 @@ $(function() {
         '        placeholder="e.g. admin@example.com">' +
         '  </div>' +
         '  <div class="controls">' +
-        '    <button class="gcb-button save-button">OK</button>' +
-        '    <button class="gcb-button cancel-button">Cancel</button>' +
+        '    <button class="btn-primary save-button">OK</button>' +
+        '    <button class="btn primary cancel-button">Cancel</button>' +
         '  </div>' +
         '  <div class="spinner hidden">' +
         '    <div class="background"></div>' +
@@ -394,9 +394,9 @@ $(function() {
         '  </div>' +
         '  <div class="controls">' +
         '    <button id="multi-course-save" ' +
-        '            class="gcb-button save-button">Save</button>' +
+        '            class="btn-primary save-button">Save</button>' +
         '    <button id="multi-course-close" ' +
-        '            class="gcb-button cancel-button">Close</button>' +
+        '            class="btn-primary cancel-button">Close</button>' +
         '  </div>' +
         '  <div id="multi-course-spinner" class="spinner hidden">' +
         '    <div class="background"></div>' +

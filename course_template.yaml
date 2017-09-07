@@ -52,7 +52,7 @@ html_hooks:
           <input class="gcb-search-box" name="query" type="text"
                  aria-label="Enter a search term">
           <input value="Search"
-              class="gcb-button gcb-search-button" type="submit">
+              class="btn-primary gcb-search-button" type="submit">
         </form>
       </li>'
     after_top_content_ends: '<!-- base.after_top_content_ends -->'
