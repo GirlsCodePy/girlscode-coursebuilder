@@ -535,11 +535,10 @@ a.gcb-button-action, button.gcb-button-action {
 }
 .gcb-next-button a {
   padding: 10px 20px 10px 20px;
-  width: 160px;
+
 }
 .gcb-prev-button a {
   padding: 10px 20px 10px 10px;
-  width: 160px;
 }
 
 .gcb-next-button a:after, .gcb-prev-button a:after {
